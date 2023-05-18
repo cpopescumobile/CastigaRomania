@@ -1,0 +1,7 @@
+1. Need to select both frames if there are 2 subsequent frames and one contains 5500 green px and another has 20000 green pixels (no matter the order of subsequence).
+Because most likely they do not contain both a question, one of them is a false positive frame but until later processing we do 
+not know which frame should be kept. So, we should keep both and decide later. 
+
+2. At the end of the current process need to take one by one each selected frame (the frames with questions and answers) and filter out the ones that actually do not contain a question. 
+Move those frames to another folder named: Removed.
+Try to determine which are those frames, by checking if the green pixels are mostly grouped together or are scattered all over the screen.
