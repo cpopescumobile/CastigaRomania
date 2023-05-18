@@ -1,4 +1,5 @@
 1. Need to select both frames if there are 2 subsequent frames and one contains 5500 green px and another has 20000 green pixels (no matter the order of subsequence).
+That is when both counts are greater than 5000 px, but the difference between the counts is greater than 20%: abs(val1-val2) / val1 > 0.2 or abs(val1-val2) / val2 > 0.2
 Because most likely they do not contain both a question, one of them is a false positive frame but until later processing we do 
 not know which frame should be kept. So, we should keep both and decide later. 
 
